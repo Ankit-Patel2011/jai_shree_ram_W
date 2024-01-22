@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ram Mandir Celebration</title>
+    <style>
+        /* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #faeacd;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    background-color: #fcb751;
+    color: #ecf0f1;
+}
+
+header:hover{
+    font-size: 25px;
+    transition: 0.5s;
+}
+.logo {
+    /* width: 40px; */
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+h1:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+nav a:hover {
+    background-color: #3498db;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0e8d8;
+    border-radius: 5px;
+}
+
+h2:hover {
+    color: #e7973c;
+    font-size: 1.9rem;
+    transition: 0.5s;
+    font-weight: 500;
+
+}
+
+p:hover {
+    color: #ff4e4e;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.image-container img:hover {
+    opacity: 0.8;
+    background-color: orange;
+}
+
+.reserved:hover {
+    color: #e74c3c;
+    size: 18px;
+    transition: 0.2s;
+}
+
+/* New hover effects for specific elements */
+
+/* #home h2:hover {
+    color: #f18a03;
+    font-size: 1.9em;
+    transition: 0.5s;
+}
+
+#about h2:hover,
+#about p:hover {
+    color: #e67e22;
+}
+
+#history h2:hover,
+#history p:hover {
+    color: #9b59b6;
+}
+
+#friends h2:hover,
+#friendNames:hover {
+    color: #ff960c;
+}
+
+#aboutMe h2:hover,
+#aboutMe p:hover {
+    color: #fad739;
+} */
+
+footer {
+    margin-top: auto;
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2em;
+}
+
+/* Scrolling text animation */
+#friendNames {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scrollText 20s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="/Canvas-Paintings-Jai-Sri-Ram-Painting-jai-Shree-ram-ayodhya-Ram-mandir-800x534w.jpeg" alt="Ram Logo" class="logo" style="height: 10rem;">
+        <h1 id="h1_ram">Ram Mandir Celebration</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <!-- <a href="#videos">Videos</a> Removed video section -->
+        <a href="https://en.wikipedia.org/wiki/Ram_Mandir">About Ram Mandir</a>
+        <a href="https://en.wikipedia.org/wiki/Ram_Mandir">Ram History</a>
+      
+        <a href="/level2_practice.html">About Me</a>
+        <a href="/review.html">Review</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to the Celebration!</h2>
+        <p>Dear friends and teachers, on this joyous occasion of the Ram Mandir inauguration, may the divine blessings of Lord Ram fill your lives with happiness and prosperity. Wishing you all a second Diwali, brimming with love, light, and positivity.</p>
+        <!-- Add colorful images of Shree Ram here -->
+    </section>
+
+    <!-- Removed video section -->
+
+    <section id="about">
+        <h2>About Ram Mandir</h2>
+        <p>Ram Mandir, located in Ayodhya, Uttar Pradesh, India, is a symbol of faith, devotion, and cultural significance. The construction of this grand temple dedicated to Lord Ram marks a historic milestone in the collective consciousness of the nation.</p>
+        <p>The temple, with its stunning architecture, reflects the rich heritage and artistry of Indian culture. It stands as a testimony to the unity and resilience of the people, embodying the ideals and teachings of Lord Ram.</p>
+        <!-- Add more information about Ram Mandir -->
+
+        <!-- Images of Ram Mandir -->
+        <div class="image-container">
+            <img src="" alt="Ram Mandir Image 1">
+            <img src="" alt="Ram Mandir Image 2">
+            <!-- Add more images if needed -->
+        </div>
+    </section>
+
+    <section id="history">
+        <h2>Ram History</h2>
+        <p>Delve into the profound history and teachings of Lord Ram, the epitome of righteousness and virtue. His life's journey teaches us valuable lessons of compassion, sacrifice, and the pursuit of truth.</p>
+        <!-- Add more information about Ram's history -->
+        
+        <!-- Wikipedia iframe -->
+        <iframe src="https://en.wikipedia.org/wiki/Ram_Mandir" width="100%" height="600px" frameborder="0"></iframe>
+    </section>
+
+    <section id="friends">
+        <h2> Celebrating Together</h2>
+        <div id="friendNames">
+            Wishing my amazing classmates and teachers - everyone else - a blessed and joyous celebration! May this occasion strengthen the bonds of friendship and illuminate our lives with positivity.
+        </div>
+    </section>
+
+    <p class="reserved"> &copy; 2024 Ankit Patel. All rights reserved.</p>
+
+    <!-- <section id="aboutMe">
+        <h2>About Me</h2>
+        <p>Hello, I'm [Your Name], the web developer behind this celebration platform. It brings me immense joy to create a space where we can share the joy of this historical event. May this website be a source of inspiration and unity for all of us!</p>
+        Add more information about yourself -->
+    <!-- </section>
+
+    <section id="review">
+        <h2>Review</h2> -->
+        <!-- Add review content -->
+    <!-- </section> --> 
+
+</body>
+</html>
